@@ -1,0 +1,30 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API criada para o desafio",
+  "main": "index.js",
+  "dependencies": {
+    "async-request": "^1.2.0",
+    "commander": "^2.15.1",
+    "fs": "0.0.1-security",
+    "koa": "^2.7.0",
+    "koa-body": "^4.0.8",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "moment": "^2.24.0",
+    "neat-csv": "^6.0.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "NODE_PATH=. NODE_ENV=production node index.js",
+    "prod": "NODE_PATH=. NODE_ENV=production node index.js",
+    "dev": "NODE_PATH=. NODE_ENV=development node index.js",
+    "dev2": "NODE_PATH=. NODE_ENV=development nodemon",
+    "test": "NODE_PATH=. NODE_ENV=test node_modules/mocha/bin/mocha --recursive",
+    "coverage": "NODE_PATH=. NODE_ENV=test istanbul cover node_modules/mocha/bin/mocha --recursive",
+    "lint": "./node_modules/.bin/eslint {src,config}/**/*.js"
+  },
+  "author": "Fábio Barros",
+  "license": "ISC"
+}
